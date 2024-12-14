@@ -1,0 +1,46 @@
+.splide-reviews {
+
+  &__img {
+    img {
+      max-width: 300px;
+      width: 80px;
+      height: auto;
+    }
+  }
+
+  &__item {
+    text-align: left;
+    text-decoration: none;
+    padding: 50px 45px;
+    margin: 0 15px 30px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 9px 24px 0 rgba(26, 47, 106, .06);
+
+
+
+    &::before {
+      width: 0;
+      height: 0;
+      border-left: 250px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 65px solid;
+      content: "";
+      position: absolute;
+      right: 5%;
+      top: 0;
+      z-index: -1;
+      border-top-color: rgba(254, 182, 0, .3);
+    }
+  }
+
+  &__title {
+    color: #383838;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #1d1d1d;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  &__body {}
+}

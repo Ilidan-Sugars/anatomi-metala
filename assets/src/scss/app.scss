@@ -1,0 +1,23 @@
+@import "core/bootstrap";
+@import "core/core";
+@import "core/owl";
+@import "core/lazy";
+@import "core/magnific";
+
+@import '@splidejs/splide/css';
+@import "~magnific-popup/dist/magnific-popup";
+
+@import "fonts/fontello";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/content";
+
+@import "components/popup";
+@import "components/list-reviews";
+@import "components/list-projects";
+@import "components/our-service";
+@import "components/feedback";
+@import "components/advantages";
+
+@import "pages/index";

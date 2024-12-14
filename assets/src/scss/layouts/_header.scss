@@ -1,0 +1,64 @@
+.header {
+  .navbar-toggler {
+    border: 0px;
+  }
+
+  .top-bar {
+    color: #fff;
+    background-color: #23292e;
+    padding: 8px 0px;
+    font-size: 14px;
+
+    .top-bar__contacts {
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      li {
+        margin-right: 15px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .bottom_bar {
+    padding: 15px 0px;
+    font-size: 14px;
+
+    .logo {
+      height: 100%;
+      max-width: 210px;
+    }
+
+    .navbar-nav {
+      font-size: 16px;
+
+      .current-menu-item {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+@media handheld,
+only screen and (max-width: 991px) { 
+  .header {
+    .top-bar {
+      display: none;
+    }
+    .bottom_bar {
+      .logo {
+        max-width: 70px;
+      }
+    }
+  }
+}

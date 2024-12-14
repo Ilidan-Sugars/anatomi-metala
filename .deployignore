@@ -1,0 +1,16 @@
+/.git
+/.github
+/node_modules
+/assets/src
+composer.phar
+composer.json
+composer.lock
+package.json
+webpack.mix.js
+yarn.lock
+DOCKER_ENV
+Dockerfile-php-build
+docker_tag
+output.log
+.deployignore
+.gitignore

@@ -1,0 +1,127 @@
+h2 {
+  margin-bottom: 25px;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+
+
+}
+
+::selection {
+  background: #feb600;
+  color: #000000;
+  /* Цвет текста */
+}
+
+.social-links {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+  li {
+    a {}
+  }
+}
+
+.btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  overflow: hidden;
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  background: #feb600;
+  border-color: #feb600;
+  color: #000;
+
+  &:hover {
+    background: #e1a200;
+    border-color: #e1a200;
+    color: #000;
+  }
+}
+
+.btn-outline-primary {
+  background: transparent;
+  border-color: #feb600;
+  color: #feb600;
+
+  &:hover {
+    background: #e1a200;
+    border-color: #e1a200;
+  }
+}
+
+.submitting {
+  .wpcf7-spinner {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 36px);
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #0000007d;
+    opacity: .85;
+  }
+}
+
+.section-bottom-100 {
+  padding-bottom: 100px;
+}
+
+.section-top-100 {
+  padding-top: 100px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #000;
+
+  &--center {
+    text-align: center;
+  }
+
+  .sub-title {
+    position: relative;
+    display: inline-block;
+    padding: 0 50px;
+    line-height: 1;
+
+    &::before,
+    &::after {
+      content: "";
+      top: 50%;
+      width: 35px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      background-color: #feb600;
+      transform: translateY(-20%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+    }
+
+    &::after {
+      left: 0;
+    }
+
+    &::before {
+      right: 0;
+    }
+  }
+
+  h2 {}
+}

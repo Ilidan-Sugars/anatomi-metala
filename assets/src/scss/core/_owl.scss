@@ -1,0 +1,43 @@
+.owl-carousel {
+  .owl-item img {
+    height: auto;
+  }
+
+  .owl-nav {
+    color: #000;
+    font-size: 60px;
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+  }
+
+  .owl-prev {
+    left: -50px;
+  }
+
+  .owl-next {
+    right: -50px;
+  }
+
+  .owl-stage {
+    display: flex;
+  }
+}
+
+
+@media handheld,
+only screen and (max-width: 991px) {
+  .owl-carousel {
+    .owl-prev {
+      left: 30px;
+    }
+
+    .owl-next {
+      right: 30px;
+    }
+  }
+}

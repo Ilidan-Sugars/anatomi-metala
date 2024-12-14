@@ -1,0 +1,35 @@
+.magnific-youtube {
+  position: relative;
+  display: inline-block;
+  transition: all 0.4s;
+
+  img {
+    max-width: 350px;
+    height: auto;
+  }
+
+  &:hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0000008c;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+  }
+
+  &:before,
+  &:hover:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #f9f9f9;
+    border-bottom: 17px solid transparent;
+    z-index: 6;
+  }
+}

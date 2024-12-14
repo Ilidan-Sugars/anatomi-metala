@@ -1,0 +1,54 @@
+.thumbnail-lazy {
+    display: block;
+    position: relative
+}
+
+.thumbnail-lazy:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f4f4f4;
+    border: 1px dotted #c8c8c8;
+    border-radius: 3px
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.thumbnail-lazy:after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #000;
+    animation: spinner .6s linear infinite
+}
+
+@media handheld,
+only screen and (max-width: 991px) {
+    .home h1 {
+        font-size: 1.7rem
+    }
+
+    .main-content {
+        padding-top: 116px
+    }
+
+    .sub-title {
+        font-size: 20px
+    }
+}

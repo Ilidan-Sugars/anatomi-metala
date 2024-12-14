@@ -1,0 +1,20 @@
+{
+    "name": "kornixdev/kms142",
+    "license": "MIT",
+    "type": "wordpress-theme",
+	"version": "1.0.0",
+    "authors": [
+        {
+            "name": "kornixdev"
+        }
+    ],
+    "minimum-stability": "stable",
+	"autoload": {
+		"psr-4": { "Kms142\\": "./inc" },
+		"files": [ "./inc/Helpers.php" ]
+	},
+    "require": {},
+    "config": {
+        "optimize-autoloader": true
+    }
+}
