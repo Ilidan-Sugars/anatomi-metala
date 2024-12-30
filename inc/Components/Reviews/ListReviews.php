@@ -54,12 +54,12 @@ class ListReviews
                 new Splide('#splide-reviews-$id', {
                     type: 'loop',
                     pagination: false,
-                    perPage: 2,
+                    perPage: 3,
                     gap: 15,
                     arrows: 0,
                     drag: 1,
                     breakpoints: {
-                      900: {
+                      992: {
                         perPage: 1
                       },
                       1100: {

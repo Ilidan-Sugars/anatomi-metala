@@ -1,10 +1,21 @@
-import {left} from '@popperjs/core'
+import { left } from '@popperjs/core'
 import $ from 'jquery'
 
 document.addEventListener('DOMContentLoaded', () => {
 	const container = $('.main-banner')
 
-	$(container).on('mousemove', function(e) {
+	window.addEventListener('scroll', function () {
+		const getheader = document.getElementById('header')
+		if(window.scrollY != 0){
+			getheader.classList.add('notTransparent')
+		}
+		else{
+			getheader.classList.remove('notTransparent')
+		}
+	});
+
+
+	$(container).on('mousemove', function (e) {
 		if ($(window).width() < 991) {
 			return
 		}

@@ -1,16 +1,23 @@
 h2 {
+  font-weight: bold;
+  font-size: 40px;
   margin-bottom: 25px;
 }
 
-body {
-  font-family: 'Rubik', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #999;
+  font-size: 14px;
 
 }
 
 ::selection {
-  background: #feb600;
-  color: #000000;
+  background: #000000;
+  color: #ffffff;
   /* Цвет текста */
 }
 
@@ -27,34 +34,51 @@ body {
 
 .btn {
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   overflow: hidden;
   border-radius: 0;
   position: relative;
   z-index: 1;
   padding: 10px 20px;
+  border: 2px solid;
 }
 
 .btn-primary {
-  background: #feb600;
-  border-color: #feb600;
-  color: #000;
+  background: #feb60000 !important;
+  border-color: #ffae00 !important;
+  color: #ffae00 !important;
 
   &:hover {
-    background: #e1a200;
-    border-color: #e1a200;
-    color: #000;
+    background: #ffae00 !important;
+    border-color: #ffae00 !important;
+    color: #000000 !important;
+  }
+}
+
+.btn-form {
+  width: 100%;
+  background: #ffae00 !important;
+  border-color: #ffae00 !important;
+  color: #000000 !important;
+
+  &:hover {
+    background: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffae00 !important;
   }
 }
 
 .btn-outline-primary {
   background: transparent;
-  border-color: #feb600;
-  color: #feb600;
+  border-color: #ffffff;
+  color: #ffffff;
 
   &:hover {
-    background: #e1a200;
-    border-color: #e1a200;
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #000000;
   }
 }
 
@@ -88,40 +112,41 @@ body {
 
 .title {
   margin-bottom: 20px;
-  color: #000;
+
 
   &--center {
     text-align: center;
   }
 
-  .sub-title {
-    position: relative;
-    display: inline-block;
-    padding: 0 50px;
-    line-height: 1;
+  .sub-title {}
 
-    &::before,
-    &::after {
-      content: "";
-      top: 50%;
-      width: 35px;
-      height: 2px;
-      display: block;
-      position: absolute;
-      background-color: #feb600;
-      transform: translateY(-20%);
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-    }
-
-    &::after {
-      left: 0;
-    }
-
-    &::before {
-      right: 0;
-    }
+  h2 {
+    color: #000;
   }
 
-  h2 {}
+}
+
+@media handheld,
+only screen and (max-width: 991px) {
+  .btn-primary {
+    background: #ffae00 !important;
+    border-color: #ffae00 !important;
+    color: #000000 !important;
+
+  }
+
+  .btn-form {
+    width: 100%;
+    background: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffae00 !important;
+
+  }
+
+  .btn-outline-primary {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #000000;
+
+  }
 }

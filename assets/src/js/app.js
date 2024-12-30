@@ -8,6 +8,8 @@ import 'bootstrap'
 
 import 'magnific-popup'
 import 'jquery-lazy'
+//import '~aos/dist/aos.js'
+
 
 import './utils/cookies.js' // Функции для работы с куками
 import './utils/lazy.js' // Функционал для ленивой загрузки карт и картинок
@@ -16,6 +18,8 @@ import './extend' // Скрипты расширяющие функционал 
 import './core' // Основной функционал, который использутеся везде
 import './components' // Специфические функции для работы с конкретными компонентами типа "отзывы" и т.д.
 import './pages' // Скрипты свойственные только для конкретных страниц
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 	const request = $('.request-type')
@@ -34,4 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		request.val('Прочее')
 	}
 	console.log(request.val())
+
+	//AOS.init();
 })
+

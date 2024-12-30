@@ -2,5 +2,5 @@
   <h4>Остались вопросы?</h4>
   <p>Мы перезвоним Вам в ближайшее время.</p>
 
-  <?php echo do_shortcode('[contact-form-7 id="a3f9d9a" title="Остались вопросы?"]'); ?>
+  <?php echo do_shortcode('[contact-form-7 id="470b6c3" title="Вопрос"]'); ?>
 </div>

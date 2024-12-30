@@ -4,8 +4,9 @@
   background-size: cover;
   position: relative;
   z-index: 1;
-  color: #fff;
-  background: #242424;
+  background: #000000;
+  padding: 100px;
+  border-top: 3px solid #fab915;
 
   .social-links {
     display: flex;
@@ -13,6 +14,21 @@
     li {
       margin-right: 10px;
     }
+  }
+
+  .text {
+    margin-top: 32px;
+
+    h5 {
+      color: #fff;
+    }
+  }
+
+
+  .logo-white {
+    width: 180px;
+    max-width: 180px;
+    margin: 20px;
   }
 
   a {
@@ -27,7 +43,8 @@
   ul {
     list-style: none;
     padding: 0px;
-    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 50px;
   }
 
   &__info {
@@ -36,10 +53,9 @@
   }
 
   .copyright {
-    color: #fff;
-    background-color: #23292e;
-    text-align: center;
-    padding: 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

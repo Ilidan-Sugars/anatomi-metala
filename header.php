@@ -17,31 +17,32 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body <?php body_class('page__body'); ?>>
-  <header class="header">
+  <header id="header" class="header">
     <div class="top-bar">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-9 col-lg-8">
             <ul class="top-bar__contacts">
               <li>
-                <a href="tel:+79234942896">
-                  <i class="icon-phone"></i> +7 (923) 494-28-96
+                <a href="tel:+79609064488">
+                  <i class="icon-phone"></i> +7 (960) 906-44-88
                 </a>
               </li>
               <li>
-                <a href="mailto: kms-142@bk.ru">
-                  <i class="icon-mail-alt"></i> kms-142@bk.ru</a>
+                <a href="mailto:anatomiay-metalla@bk.ru">
+                  <i class="icon-mail-alt"></i>anatomiay-metalla@bk.ru</a>
               </li>
             </ul>
           </div>
           <div class="col-5 col-md-3 col-lg-4 d-none d-md-block">
             <ul class="top-bar__contacts justify-content-end">
               <li>
-                <i class="icon-location"></i> г. Кемерово, ул Шатурская 6, офис 5
+                <i class="icon-location"></i> г. Кемерово, ул октябрьский 34а
               </li>
             </ul>
           </div>
@@ -54,7 +55,9 @@
           <div class="container">
             <div class="site-logo">
               <a href="/">
-                <img class="logo" src="<?= assets('images/logo.png') ?>" alt="Кемерово Монтаж Строй 142" />
+                <img class="logo-black" src="<?= assets('images/logo-black.png') ?>" alt="Кемерово Монтаж Строй 142" />
+                <img class="logo-white" src="<?= assets('images/logo-white.png') ?>" alt="Кемерово Монтаж Строй 142" />
+                <img class="logo" src="<?= assets('images/logo-black.png') ?>" alt="Кемерово Монтаж Строй 142" />
               </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -62,20 +65,14 @@
               <i class="icon-menu"></i>
             </button>
             <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-              <?php
-              wp_nav_menu(
-                array(
-                  'theme_location' => 'top',
-                  'depth' => 2,
-                  'container' => 'ul',
-                  'container_class' => 'navbar-nav mr-auto mt-2 mt-lg-0',
-                  'container_id' => 'bs-example-navbar-collapse-1',
-                  'menu_class' => 'navbar-nav mr-auto',
-                  'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-                  'walker' => new Kms142\Classes\WP_Bootstrap_Navwalker(),
-                )
-              );
-              ?>
+              <ul>
+                <li><a href="#about-us">О нас</a></li>
+                <li><a href="#why-me">Почему мы</a></li>
+                <li><a href="#our-directions">Виды работ</a></li>
+                <li><a href="#coll-form">Подать заявку</a></li>
+                <li><a href="#last-projects">Проекты</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+              </ul>
             </div>
           </div>
         </nav>
